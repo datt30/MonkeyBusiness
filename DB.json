@@ -1,0 +1,76 @@
+{
+  "unidad x":{
+  "comercio_externo": [
+    {
+      "nombre": "",
+      "descripcion": "",
+      "telefono": "",
+      "celular": "",
+      "direccion": "",
+      "NIT": "",
+      "img1": "",
+      "img2": "",
+      "lat-lon": ""
+    }
+  ],
+  "negocio_interno": [
+    {
+      "nombre": "",
+      "descripcion": "",
+      "telefono": "",
+      "celular": "",
+      "bloque": "",
+      "NIT": "",
+      "img1": "",
+      "img2": ""
+    }
+  ],
+  "contactos": [
+    {
+      "nombre": "",
+      "descripcion": "",
+      "celular": "",
+      "direccion": "",
+      "img1": "",
+      "img2": ""
+    }
+  ]
+  },
+  "unidad y":{
+  "comercio_externo": [
+    {
+      "nombre": "",
+      "descripcion": "",
+      "telefono": "",
+      "celular": "",
+      "direccion": "",
+      "NIT": "",
+      "img1": "",
+      "img2": "",
+      "lat-lon": ""
+    }
+  ],
+  "negocio_interno": [
+    {
+      "nombre": "",
+      "descripcion": "",
+      "telefono": "",
+      "celular": "",
+      "bloque": "",
+      "NIT": "",
+      "img1": "",
+      "img2": ""
+    }
+  ],
+  "contactos": [
+    {
+      "nombre": "",
+      "descripcion": "",
+      "celular": "",
+      "direccion": "",
+      "img1": "",
+      "img2": ""
+    }
+  ]
+  }
+}
