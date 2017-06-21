@@ -1,0 +1,67 @@
+
+body {
+  background-image: url("../assets/fondo.png");
+  background-size: 100%;
+}
+
+/*estilo correspondiente al formulario de contactos*/
+#form_contactos {
+  width: 300px ;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 14%;
+}
+
+#form_contactos button{
+  width: 100%;
+  text-align: center;
+}
+#form_contactos .descripcion{
+  overflow-y: scroll;
+  height: 100px;
+  text-align: left;
+  resize: none;
+}
+
+/*estilo correspondiente al formulario de comercios externos*/
+#form_comercio_externo {
+  width: 300px ;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 14%;
+}
+
+#form_comercio_externo button{
+  width: 100%;
+  text-align: center;
+}
+
+#form_comercio_externo .descripcion{
+  overflow-y: scroll;
+  height: 100px;
+  text-align: left;
+  resize: none;
+}
+
+/*estilo correspondiente al formulario de Negocios al interior de la urbanización*/
+#form_negocio_interno {
+  width: 300px ;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 14%;
+}
+
+#form_negocio_interno button{
+  width: 100%;
+  text-align: center;
+}
+
+#form_negocio_interno .descripcion{
+  overflow-y: scroll;
+  height: 100px;
+  text-align: left;
+  resize: none;
+}

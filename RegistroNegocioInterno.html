@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>MonkeyEvents</title>
-    <link rel="stylesheet" href="app/app.css"/>
+    <link rel="stylesheet" href="app/formulario.css"/>
     <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.css"/>
 </head>
 
@@ -14,33 +14,27 @@
 
 <form id="form_negocio_interno">
   <div class="form-group">
-    <label for="nombre">Nombre:</label>
-    <input type="text" class="form-control" id="nombre">
+    <input type="text" class="form-control default-value" value="Nombre" id="nombre">
   </div>
   <div class="form-group">
-    <label for="descripcion">Descripcion del Negocio:</label>
-    <input type="text" class="form-control" id="descripcion">
+    <input type="text" class="form-control default-value" value="N.I.T" id="nit">
   </div>
   <div class="form-group">
-    <label for="descripcion">Telefono:</label>
-    <input type="text" class="form-control" id="telefono">
+    <input type="text" class="form-control default-value" value="Teléfono" id="telefono">
   </div>
   <div class="form-group">
-    <label for="descripcion">Celular:</label>
-    <input type="text" class="form-control" id="celular">
+    <input type="text" class="form-control default-value" value="Celular" id="celular">
   </div>
   <div class="form-group">
-    <label for="descripcion">Bloque:</label>
-    <input type="text" class="form-control" id="bloque">
+    <input type="text" class="form-control default-value" value="Bloque" id="bloque">
   </div>
   <div class="form-group">
-    <label for="descripcion">NIT:</label>
-    <input type="text" class="form-control" id="nit">
+    <textarea name="textarea" class="form-control default-value descripcion" value="Agregue una descripcion..." id="descripcion">Agregue una descripción del negocio...</textarea>
   </div>
   <div class="checkbox">
     <label><input type="checkbox"> Autorizo a ........ a utilizar mi informacion con el fin de ...</label>
   </div>
-  <button type="submit" class="btn btn-default" value="">Enviar</button>
+  <button type="submit" class="btn btn-primary btn-lg">Registrarme!</button>
  </form>
 
 </div>
@@ -55,7 +49,7 @@
 <!--Aplication-->
 <script src="app/DBconfi.js"></script>
 <script src="app/negocioInterno.js"></script>
-
+<script language="javascript" src="app/formquery.js"></script>
 
 </body>
 </html>

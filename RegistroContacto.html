@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>MonkeyEvents</title>
-    <link rel="stylesheet" href="app/app.css"/>
+    <link rel="stylesheet" href="app/formulario.css"/>
     <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.css"/>
 </head>
 
@@ -13,29 +13,24 @@
 <div>
   <form id="form_contactos">
     <div class="form-group">
-      <label for="descripcion">Celular:</label>
-      <input type="text" class="form-control" id="celular">
+      <input type="text" class="form-control default-value" value="Nombre" id="nombre">
     </div>
     <div class="form-group">
-      <label for="descripcion">Correo electronico:</label>
-      <input type="text" class="form-control" id="correo">
+      <input type="text" class="form-control default-value" value="Celular"id="celular">
     </div>
     <div class="form-group">
-      <label for="descripcion">Descripcion del contacto:</label>
-      <input type="text" class="form-control" id="descripcion">
+      <input type="text" class="form-control default-value" value="Correo Electronico" id="correo">
     </div>
     <div class="form-group">
-      <label for="descripcion">Direccion:</label>
-      <input type="text" class="form-control" id="direccion">
+      <input type="text" class="form-control default-value" value="Dirección" id="direccion">
     </div>
     <div class="form-group">
-      <label for="nombre">Nombre:</label>
-      <input type="text" class="form-control" id="nombre">
+      <textarea name="textarea" class="form-control default-value descripcion" value="Agregue una descripcion..." id="descripcion">Agregue una descripción...</textarea>
     </div>
     <div class="checkbox">
       <label><input type="checkbox"> Autorizo a ........ a utilizar mi informacion con el fin de ...</label>
     </div>
-    <button type="submit" class="btn btn-default" value="">Enviar</button>
+    <button type="submit" class="btn btn-primary btn-lg">Registrarme!</button>
    </form>
 
 </div>
@@ -51,7 +46,7 @@
 <!--Aplication-->
 <script src="app/DBconfi.js"></script>
 <script src="app/contactos.js"></script>
-
+<script language="javascript" src="app/formquery.js"></script>
 
 </body>
 </html>
