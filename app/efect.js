@@ -30,5 +30,6 @@ $(document).ready(function() {
 
 //realiza todos los cambios y animaciones para voltear las tarjetas
 function animationflip(element){
-    animation(element, 'flipInY');
+    var content_card = $(element).parent();
+    animation(content_card, 'flipInY');
 }
