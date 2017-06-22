@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("../assets/fondo.png");
+  background-image: url("../assets/fondo2.png");
   background-size: 100%;
 }
 
@@ -11,6 +11,7 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-top: 14%;
+  margin-bottom: 14%;
 }
 
 #form_contactos button{
@@ -31,6 +32,7 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-top: 14%;
+  margin-bottom: 14%;
 }
 
 #form_comercio_externo button{
@@ -52,6 +54,7 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-top: 14%;
+  margin-bottom: 14%;
 }
 
 #form_negocio_interno button{

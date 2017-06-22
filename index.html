@@ -4,17 +4,71 @@
     <meta charset="UTF-8">
     <title>MonkeyEvents</title>
     <link rel="stylesheet" href="app/principal.css"/>
+    <link rel="stylesheet" href="app/animate.css"/>
     <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.css"/>
 </head>
 
 <body>
 
+    <a href="RegistroNegocioInterno.html"><div type="button" class="button_register"></div></a>
 
-  <div id="container_buttons">
-   <button type="button" class="btn btn-primary">Contactos Cercanos</button>
-   <button type="button" class="btn btn-success">Comercio Aledaño</button>
-   <button type="button" class="btn btn-warning">Negocio Interno</button>
-  </div>
+    <div id="container_buttons">
+     <button type="button" class="btn btn-primary btn-lg">Contactos Cercanos</button>
+     <button type="button" class="btn btn-success btn-lg">Comercios Aledaños</button>
+     <button type="button" class="btn btn-warning btn-lg">Negocios Internos</button>
+    </div>
+
+    <div id="container_cards">
+
+      <div class="col-md-4">
+        <div class="card_contacto invisible" onclick="animationflip(this)">
+          <img src="assets/b3.jpg" alt="" class="img_card">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card_comercio_externo invisible" onclick="animationflip(this)">
+          <img src="assets/b1.jpg" alt="" class="img_card">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card_negocio_interno invisible" onclick="animationflip(this)">
+          <img src="assets/b2.jpg" alt="" class="img_card">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card_contacto invisible" onclick="animationflip(this)">
+          <img src="assets/b1.jpg" alt="" class="img_card">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card_comercio_externo invisible" onclick="animationflip(this)">
+          <img src="assets/b1.jpg" alt="" class="img_card">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card_contacto invisible" onclick="animationflip(this)">
+          <img src="assets/b5.jpg" alt="" class="img_card">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card_contacto invisible" onclick="animationflip(this)">
+          <img src="assets/b1.jpg" alt="" class="img_card">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card_negocio_interno invisible" onclick="animationflip(this)">
+          <img src="assets/b4.jpg" alt="" class="img_card">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card_comercio_externo invisible" onclick="animationflip(this)">
+          <img src="assets/b4.jpg" alt="" class="img_card">
+        </div>
+      </div>
+
+    </div>
 
 
 
@@ -25,6 +79,8 @@
 
 <!--Aplication-->
 <script src="app/DBconfi.js"></script>
+<script src="app/animation.js"></script>
+<script src="app/efect.js"></script>
 
 
 

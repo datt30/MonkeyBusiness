@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("../assets/fondo.png");
+  background-image: url("../assets/fondo2.png");
   background-size: 100%;
 }
 
@@ -9,8 +9,75 @@ h1 {
   color: white;
 }
 
+.button_register {
+ background-image: url("../assets/registrate.png");
+ background-repeat: no-repeat;
+ width: 200px;
+ height: 200px;
+ position: absolute;
+ left: 7%;
+ top: 0;
+}
+
+.button_register:hover {
+ background-image: url("../assets/registrate_gris.png");
+ background-repeat: no-repeat;
+ width: 200px;
+ height: 200px;
+ position: absolute;
+ left: 7%;
+ top: 0;
+}
+
 #container_buttons {
   width: 100%;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 7%;
+}
+
+#container_cards {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 12%;
+}
+
+.card_contacto{
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #337ab7;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card_comercio_externo{
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #5cb85c;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card_negocio_interno{
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #f0ad4e;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.img_card{
+  height: 170px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
 }
