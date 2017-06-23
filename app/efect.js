@@ -1,9 +1,4 @@
 'use strict';
-
-/**
- * Created by David on 26/09/2016.
- */
-
 //este script se encarga de ejecutar las animaciones de los elementos en el DOM
 $(document).ready(function() {
 
