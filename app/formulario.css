@@ -4,6 +4,8 @@ body {
   background-size: 100%;
 }
 
+
+
 /*estilo correspondiente al formulario de contactos*/
 #form_contactos {
   width: 300px ;
@@ -23,6 +25,10 @@ body {
   height: 100px;
   text-align: left;
   resize: none;
+}
+
+#form_contactos label{
+ color: white;
 }
 
 /*estilo correspondiente al formulario de comercios externos*/
@@ -47,6 +53,14 @@ body {
   resize: none;
 }
 
+#form_comercio_externo h4{
+ color: white;
+}
+
+#form_comercio_externo label{
+ color: white;
+}
+
 /*estilo correspondiente al formulario de Negocios al interior de la urbanización*/
 #form_negocio_interno {
   width: 300px ;
@@ -67,4 +81,21 @@ body {
   height: 100px;
   text-align: left;
   resize: none;
+}
+
+#form_negocio_interno h4{
+ color: white;
+}
+
+#form_negocio_interno label{
+ color: white;
+}
+
+/*estilo correspondiente al mapa que se requiera para definir latitud y longitud*/
+#map {
+  height: 200px;
+  width: 300px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
 }

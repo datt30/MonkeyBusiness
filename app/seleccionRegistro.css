@@ -10,15 +10,20 @@ body {
   margin-top: 5%;
 }
 
-.floating-box {
-    display: inline-block;
-    width: 300px;
-    height: auto;
-    margin:0 45%;
-    padding-bottom: 1em;
+.container_for_buttons{
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
 }
-label{
+
+.container_for_buttons button{
+  width: 200px;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.container_for_buttons label{
   color: white;
-  margin: 0 45%;
-  width: 19%;
+  width: 210px;
+  text-align: center;
 }

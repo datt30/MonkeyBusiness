@@ -5,6 +5,7 @@
     <title>MonkeyEvents</title>
     <link rel="stylesheet" href="app/formulario.css"/>
     <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.css"/>
+
 </head>
 
 <body>
@@ -31,10 +32,16 @@
   <div class="form-group">
     <textarea name="textarea" class="form-control default-value descripcion" value="Agregue una descripcion..." id="descripcion">Agregue una descripción del negocio...</textarea>
   </div>
+
+  <h4>Por favor deja una marca dando click en el lugar en el que se encuentra tu negocio o comercio en el mapa:</h1>
+  <div id="map"></div>
+
   <div class="checkbox">
     <label><input type="checkbox"> Autorizo a ........ a utilizar mi informacion con el fin de ...</label>
   </div>
+
   <button type="submit" class="btn btn-primary btn-lg">Registrarme!</button>
+
  </form>
 
 </div>
@@ -45,11 +52,13 @@
 <script src="dependencies/jquery/dist/jquery.min.js"></script>
 <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOQBv5zupmINwFLeWUeydwzCxbQqM1SoM&callback=initMap"></script>
 
 <!--Aplication-->
 <script src="app/DBconfi.js"></script>
 <script src="app/negocioInterno.js"></script>
 <script language="javascript" src="app/formquery.js"></script>
+<script src="app/map.js"></script>
 
 </body>
 </html>
