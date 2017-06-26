@@ -4,7 +4,12 @@ body {
   background-size: 100%;
 }
 
-
+#container_img_urb{
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+  padding-bottom: 1%;
+}
 
 /*estilo correspondiente al formulario de contactos*/
 #form_contactos {
@@ -12,8 +17,6 @@ body {
   height: auto;
   text-align: center;
   margin: 0 auto;
-  margin-top: 14%;
-  margin-bottom: 14%;
 }
 
 #form_contactos button{
@@ -37,8 +40,6 @@ body {
   height: auto;
   text-align: center;
   margin: 0 auto;
-  margin-top: 14%;
-  margin-bottom: 14%;
 }
 
 #form_comercio_externo button{
@@ -67,8 +68,6 @@ body {
   height: auto;
   text-align: center;
   margin: 0 auto;
-  margin-top: 14%;
-  margin-bottom: 14%;
 }
 
 #form_negocio_interno button{
