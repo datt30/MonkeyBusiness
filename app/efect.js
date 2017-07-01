@@ -1,4 +1,8 @@
 'use strict';
+var map;
+var siteUrb; //site of urbanization
+var markers = [];
+
 //este script se encarga de ejecutar las animaciones de los elementos en el DOM
 $(document).ready(function() {
 
@@ -31,8 +35,8 @@ function animationflip(element){
     card.children().eq(0).addClass('disappear'); //le agregamos disappear al adverso de la carta
     card.children().eq(1).removeClass('disappear'); //le quitamos disappear al reverso de la carta
     //colocamos el mapa en el reverso de la carta
-    //var mapInCard = card.children().eq(1).children().eq(0);
-    //mapForCard(mapInCard,{lat:6.216280, lng: -75.605903});
+    var mapInCard = card.children().eq(1).children().eq(0).get(0);
+    mapForCard(mapInCard,{lat:6.216280, lng: -75.605903});
 }
 
 //realiza todos los cambios y animaciones para voltear la tarjeta a su estado original
@@ -40,17 +44,22 @@ function animationflipOut(element){
     var card = $(element).parent().parent(); //toma el padre del padre del contenido obteniendo la carta en si
     animation(card, 'flipInY');
 
-    console.log(card.children().length);
     card.children().eq(0).removeClass('disappear'); //le quitamos disappear al adverso de la carta
     card.children().eq(1).addClass('disappear'); //le agregamos disappear al reverso de la carta
 }
 
 
-//remueve todas las cartas
-function removeCards(){
+
+function removeCards_exp_contactos(){
   $(".card_comercio_externo").each(function() {
       this.remove();
   });
+  $(".card_negocio_interno").each(function() {
+      this.remove();
+  });
+}
+
+function removeCards_exp_comExt(){
   $(".card_negocio_interno").each(function() {
       this.remove();
   });
@@ -59,18 +68,31 @@ function removeCards(){
   });
 }
 
-
-function removeCards_exp_contactos(){
- removeCards();
- //aqui llamar cargar solo contactos
-}
-
-function removeCards_exp_comExt(){
- removeCards();
- //aqui llamar cargar solo contactos
-}
-
 function removeCards_exp_negInt(){
- removeCards();
- //aqui llamar cargar solo contactos
+  $(".card_comercio_externo").each(function() {
+      this.remove();
+  });
+  $(".card_contacto").each(function() {
+      this.remove();
+  });
+}
+
+/////////////////////////////////////////////////MAPAS FUNCIONES E ITERACIONES /
+
+
+function mapForCard(element,location) {
+        console.log(element);
+
+        siteUrb = {lat:6.216280, lng: -75.605903};
+
+        map = new google.maps.Map(element, {
+          zoom: 16,
+          center: siteUrb,
+        });
+
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+        markers.push(marker);
 }

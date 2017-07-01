@@ -45,7 +45,7 @@ body {
 }
 
 #container_cards .card_contacto{
-  height: 250px;
+  height: 300px;
   background-color: white;
   border-radius: 10px;
   border-style: solid;
@@ -57,7 +57,7 @@ body {
 }
 
 #container_cards .card_comercio_externo{
-  height: 250px;
+  height: 300px;
   background-color: white;
   border-radius: 10px;
   border-style: solid;
@@ -69,7 +69,7 @@ body {
 }
 
 #container_cards .card_negocio_interno{
-  height: 250px;
+  height: 300px;
   background-color: white;
   border-radius: 10px;
   border-style: solid;
