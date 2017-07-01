@@ -4,10 +4,6 @@ body {
   background-size: 100%;
 }
 
-h1 {
-  text-align: center;
-  color: white;
-}
 
 .button_register {
  background-image: url("../assets/registrate.png");
@@ -57,6 +53,7 @@ h1 {
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
+  position: relative;
 }
 
 #container_cards .card_comercio_externo{
@@ -68,6 +65,7 @@ h1 {
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
+  position: relative;
 }
 
 #container_cards .card_negocio_interno{
@@ -79,6 +77,7 @@ h1 {
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
+  position: relative;
 }
 
 #container_cards .img_card{
@@ -100,10 +99,13 @@ h1 {
   border: none;
   box-shadow: 0px 0px 0px 15px rgba(0, 150, 136, 0);
   transition: box-shadow 0.4s;
-  float: right;
+  bottom: 0;
+  margin-left:auto;
+  margin-right:5px;
+  display: block;
 }
 
-#container_cards .btn-show:hover {
+#container_cards .btn-show:hover{
   background-color: #b3b4b4;
   box-shadow: 0px 0px 0px 15px rgba(0, 150, 136, 0.1);
 }
@@ -116,4 +118,33 @@ h1 {
 }
 #container_cards .color-orange{
  background-color: #f0ad4e;
+}
+
+#container_cards .info-card{
+ position: absolute;
+ width: 75%;
+ margin-left: 5px;
+}
+
+#container_cards .info-card h3{
+ margin-top: 5px;
+ margin-bottom: 0;
+}
+
+#container_cards .info-card h4{
+ margin-top: 2px;
+}
+
+#container_cards .map-card{
+  height: 170px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+.disappear{
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }

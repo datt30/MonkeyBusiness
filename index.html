@@ -17,9 +17,9 @@
     </div>
 
     <div id="container_buttons">
-     <button type="button" class="btn btn-primary btn-lg">Contactos Cercanos</button>
-     <button type="button" class="btn btn-warning btn-lg">Negocios Internos</button>
-     <button type="button" class="btn btn-success btn-lg">Comercios Aledaños</button>
+     <button type="button" class="btn btn-primary btn-lg" onclick="removeCards_exp_contactos()">Contactos Cercanos</button>
+     <button type="button" class="btn btn-warning btn-lg" onclick="">Negocios Internos</button>
+     <button type="button" class="btn btn-success btn-lg" onclick="">Comercios Aledaños</button>
     </div>
 
   <div id="container_cards">
@@ -27,6 +27,10 @@
       <div class="col-md-4">
         <div class="card_contacto invisible">
           <img src="assets/b3.jpg" alt="" class="img_card">
+          <div class="info-card">
+            <h3>nombre</h3>
+            <h4>correo</h4>
+          </div>
           <button class="btn-show glyphicon glyphicon-plus color-blue" onclick="animationflip(this)"></button>
         </div>
       </div>
@@ -36,12 +40,28 @@
           <button class="btn-show glyphicon glyphicon-plus color-green" onclick="animationflip(this)"></button>
         </div>
       </div>
+
+
       <div class="col-md-4">
         <div class="card_negocio_interno invisible">
-          <img src="assets/b2.jpg" alt="" class="img_card">
-          <button class="btn-show glyphicon glyphicon-plus color-orange" onclick="animationflip(this)"></button>
+          <div class=""><!--adverso de la carta-->
+            <img src="assets/b2.jpg" alt="" class="img_card">
+            <div class="info-card">
+              <h3>nombre</h3>
+              <h4>telefono</h4>
+            </div>
+            <button class="btn-show glyphicon glyphicon-plus color-orange" onclick="animationflip(this)"></button>
+          </div>
+          <div class="disappear"><!--reverso de la carta por defecto invisible-->
+            <div id="map" class="map-card"></div>
+            <div class="info-card">
+              <h4>descripcion: este negocio bla bla bla... bla bla bla. ...</h4>
+            </div>
+            <button class="btn-show glyphicon glyphicon-minus color-orange" onclick="animationflipOut(this)"></button>
+          </div>
         </div>
       </div>
+
 
       <div class="col-md-4">
         <div class="card_contacto invisible">
@@ -89,12 +109,15 @@
 <script src="dependencies/jquery/dist/jquery.min.js"></script>
 <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOQBv5zupmINwFLeWUeydwzCxbQqM1SoM&callback=initMap"></script>
+
 
 <!--Aplication-->
 <script src="app/DBconfi.js"></script>
 <script src="app/animation.js"></script>
 <script src="app/efect.js"></script>
-
+<script src="app/GetNegociosInternos.js"></script>
+<script src="app/map.js"></script>
 
 
 </body>
