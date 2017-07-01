@@ -28,9 +28,11 @@ function animationflip(element){
     var card = $(element).parent().parent(); //toma el padre del padre del contenido obteniendo la carta en si
     animation(card, 'flipInY');
 
-    console.log(card.children().length);
     card.children().eq(0).addClass('disappear'); //le agregamos disappear al adverso de la carta
     card.children().eq(1).removeClass('disappear'); //le quitamos disappear al reverso de la carta
+    //colocamos el mapa en el reverso de la carta
+    //var mapInCard = card.children().eq(1).children().eq(0);
+    //mapForCard(mapInCard,{lat:6.216280, lng: -75.605903});
 }
 
 //realiza todos los cambios y animaciones para voltear la tarjeta a su estado original
