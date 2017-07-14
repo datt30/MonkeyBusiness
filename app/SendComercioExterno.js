@@ -18,7 +18,7 @@ function send_comercio_externo_toFirebase(){
   refUrbanizacion_comercio_externo= refUrbanizacion.child("comercio_externo");
 
   refUrbanizacion_comercio_externo.push({
-      NIT: event.target.nit.value,
+
       celular: event.target.celular.value,
       descripcion: event.target.descripcion.value,
       direccion: event.target.direccion.value,
@@ -26,6 +26,8 @@ function send_comercio_externo_toFirebase(){
       img2: "imagen2",
       latlon: "latitud y longitud tomadas del mapa",
       nombre: event.target.nombre.value,
+      correo: event.target.correo.value,
+      pagina: event.target.pagina.value,
       telefono: event.target.telefono.value
   });
  formRegister_comercio_externo.reset();

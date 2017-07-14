@@ -30,8 +30,8 @@ function send_negocio_interno_toFirebase(event){
       descripcion: event.target.descripcion.value,
       telefono: event.target.telefono.value,
       celular: event.target.celular.value,
-      bloque: event.target.bloque.value,
-      NIT: event.target.nit.value,
+      correo: event.target.correo.value,
+      pagina: event.target.pagina.value,
       img1: "img1_URL",
       img2: "img2_URL"
   });

@@ -13,13 +13,29 @@ body {
 
 /*estilo correspondiente al formulario de contactos*/
 #form_contactos {
-  width: 300px ;
+  width: 45% ;
   height: auto;
   text-align: center;
   margin: 0 auto;
 }
+#form_contactos h2{
+ color: yellow;
+ font-size: 28px;
+ font-family: 'Abel', sans-serif;
+ margin: 0 auto;
+}
 
-#form_contactos button{
+#form_contactos h4{
+ color: white;
+ text-align: center;
+ font-size: 23px;
+ font-family: 'Abel', sans-serif;
+ margin: 0 auto;
+ padding-bottom: 20px
+}
+
+
+/*#form_contactos button{
   width: 100%;
   text-align: center;
 }
@@ -32,11 +48,11 @@ body {
 
 #form_contactos label{
  color: white;
-}
+}*/
 
 /*estilo correspondiente al formulario de comercios externos*/
 #form_comercio_externo {
-  width: 300px ;
+  width: 30% ;
   height: auto;
   text-align: center;
   margin: 0 auto;
@@ -55,7 +71,10 @@ body {
 }
 
 #form_comercio_externo h4{
- color: white;
+  color: white;
+  text-align: justify;
+  font-size: 23px;
+  font-family: 'Abel', sans-serif;
 }
 
 #form_comercio_externo label{
@@ -64,10 +83,11 @@ body {
 
 /*estilo correspondiente al formulario de Negocios al interior de la urbanización*/
 #form_negocio_interno {
-  width: 300px ;
+  width: 30%;
   height: auto;
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 
 #form_negocio_interno button{
@@ -84,6 +104,9 @@ body {
 
 #form_negocio_interno h4{
  color: white;
+ text-align: justify;
+ font-size: 23px;
+ font-family: 'Abel', sans-serif;
 }
 
 #form_negocio_interno label{
@@ -93,7 +116,7 @@ body {
 /*estilo correspondiente al mapa que se requiera para definir latitud y longitud*/
 #map {
   height: 200px;
-  width: 300px;
+  width: 100%;
   margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 10px;
