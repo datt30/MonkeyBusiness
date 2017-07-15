@@ -81,8 +81,6 @@ function removeCards_exp_negInt(){
 
 
 function mapForCard(element,location) {
-        console.log(element);
-        console.log(location);
 
         map = new google.maps.Map(element, {
           zoom: 16,
