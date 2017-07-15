@@ -9,6 +9,10 @@ body {
   text-align: center;
   margin-top: 5%;
 }
+#container_img_urb img{
+  width: 300px;
+  height: 200px;
+}
 
 .container_for_buttons{
   width: 100%;

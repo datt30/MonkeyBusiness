@@ -10,6 +10,10 @@ body {
   margin-top: 5%;
   padding-bottom: 1%;
 }
+#container_img_urb img{
+  width: 300px;
+  height: 200px;
+}
 
 /*estilo correspondiente al formulario de contactos*/
 #form_contactos {
