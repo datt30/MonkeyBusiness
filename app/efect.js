@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 
 //realiza todos los cambios y animaciones para voltear la tarjeta
-function animationflip(element){
+function animationflip(element,location){
     var card = $(element).parent().parent(); //toma el padre del padre del contenido obteniendo la carta en si
     animation(card, 'flipInY');
 
@@ -36,7 +36,7 @@ function animationflip(element){
     card.children().eq(1).removeClass('disappear'); //le quitamos disappear al reverso de la carta
     //colocamos el mapa en el reverso de la carta
     var mapInCard = card.children().eq(1).children().eq(0).get(0);
-    mapForCard(mapInCard,{lat:6.216280, lng: -75.605903});
+    mapForCard(mapInCard,location);
 }
 
 //realiza todos los cambios y animaciones para voltear la tarjeta a su estado original
@@ -82,12 +82,11 @@ function removeCards_exp_negInt(){
 
 function mapForCard(element,location) {
         console.log(element);
-
-        siteUrb = {lat:6.216280, lng: -75.605903};
+        console.log(location);
 
         map = new google.maps.Map(element, {
           zoom: 16,
-          center: siteUrb,
+          center: location,
         });
 
         var marker = new google.maps.Marker({

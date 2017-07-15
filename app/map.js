@@ -5,7 +5,7 @@ var markers = [];
 var positionOfBusiness;
 
 function initMap() {
-        siteUrb = {lat:6.216280, lng: -75.605903};
+        siteUrb = {lat:6.216280, lng:-75.605903};
 
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 16,
@@ -16,7 +16,8 @@ function initMap() {
         map.addListener('click', function(event) {
           deleteMarkers(); //borramos los marcadores para que siempre haya 1
           addMarker(event.latLng);
-          positionOfBusiness= event.latLng.lat()+", "+event.latLng.lng(); //{lat: event.latLng.lat(), lng: event.latLng.lng()};
+          positionOfBusiness= "{lat:"+ event.latLng.lat()+", lng:"+event.latLng.lng()+"}";
+          localStorage.setItem("latlon",positionOfBusiness);
         });
 
       }

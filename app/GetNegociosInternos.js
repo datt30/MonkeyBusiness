@@ -23,13 +23,23 @@ function get_negocios_internos_fromFirebase(){
       var card = document.createElement('div');
       card.className = 'col-md-4';
       card.innerHTML = '<div class="card_negocio_interno invisible">\
-                            <img src="assets/b2.jpg" alt="" class="img_card">\
-                            <div class="info-card">\
-                              <h3>'+datos[key].bloque+'</h3>\
-                              <h4>'+datos[key].bloque+'</h4>\
-                            </div>\
-                            <button class="btn-show glyphicon glyphicon-plus color-orange" onclick="animationflip(this)"></button>\
-                         </div>';
+                              <div class=""><!--adverso de la carta-->\
+                                <img src="'+datos[key].img+'" alt="" class="img_card">\
+                                <div class="info-card">\
+                                  <h3>'+datos[key].nombre+'</h3>\
+                                  <h4>'+datos[key].telefono+'</h4>\
+                                </div>\
+                                <button class="btn-show glyphicon glyphicon-plus color-orange" onclick="animationflip(this,'+datos[key].latlon+')"></button>\
+                              </div>\
+                              <div class="disappear"><!--reverso de la carta por defecto invisible-->\
+                                <div class="map-card"></div>\
+                                <div class="info-card">\
+                                  <h4>'+datos[key].pagina+'</h4>\
+                                  <h4>'+datos[key].descripcion+'</h4>\
+                                </div>\
+                                <button class="btn-show glyphicon glyphicon-minus color-orange" onclick="animationflipOut(this)"></button>\
+                              </div>\
+                        </div>';
 
       document.getElementById('container_cards').appendChild(card);
     }
