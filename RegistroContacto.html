@@ -13,14 +13,12 @@
     <img  class="img-rounded" src="assets/Convivamos1.png" alt="" >
   </div>
 
-<div>
-
+  <h2>PROXIMAMENTE...</h2>
+  <h4>Podrás proporcionar información en esta sección para que te contacten personalmente</h4>
+  <h4>Esperamos contar contigo!</h4>
 
   <form id="form_contactos">
-    <h2>PROXIMAMENTE...</h2>
-    <h4>Podrás proporcionar información en esta sección para que te contacten personalmente</h4>
-    <h4>Esperamos contar contigo!</h4>
-    <!--<div class="form-group">
+    <div class="form-group">
       <input type="text" class="form-control default-value" value="Nombre" id="nombre">
     </div>
     <div class="form-group">
@@ -38,12 +36,39 @@
     <div class="checkbox">
       <label><input type="checkbox"> Autorizo a ........ a utilizar mi informacion con el fin de ...</label>
     </div>
-    <button type="submit" class="btn btn-primary btn-lg">Registrarme!</button>
-  -->
+    <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalSaveChanges">Registrarme!</button>
+
    </form>
 
-</div>
 
+   <!-- Modal -->
+   <div id="modalSaveChanges" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+
+       <!-- Modal content-->
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 class="modal-title">Registrando nuevo negocio...</h4>
+         </div>
+         <div class="modal-body">
+           <!-- progress bar-->
+           <div class="progress">
+             <div id="progress-bar" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+             </div>
+           </div>
+           <!-- END progress bar-->
+         </div>
+         <div class="modal-footer">
+           <h1 id="progress-bar-txt">0% completado.</h1>
+           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+         </div>
+       </div>
+       <!-- END Modal content-->
+     </div>
+   </div>
+   <!-- END Modal -->
 
 
 

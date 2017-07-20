@@ -2,7 +2,9 @@ window.onload = initialize;
 
 //formulario
 var formRegister_negocio_interno;
-
+//progress-bar (in modal window)
+var progress_bar;
+var progress_bar_text_below;
 
 //variable de urbanizacion
 var refUrbanizacion;
@@ -15,6 +17,9 @@ var refUrbanizacion_negocio_interno;
  var uploadTask;
 
 function initialize(){
+progress_bar = document.getElementById('progress-bar');
+progress_bar_text_below = document.getElementById('progress-bar-txt');
+
 formRegister_negocio_interno = document.getElementById('form_negocio_interno');
 formRegister_negocio_interno.addEventListener("submit",send_negocio_interno_toFirebase, false);
 
@@ -39,6 +44,8 @@ function send_negocio_interno_toFirebase(event){
     // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
     var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
     console.log('Upload is ' + progress + '% done');
+    progress_bar.style.width = progress + '%';
+    progress_bar_text_below.textContent = progress.toFixed() + '% completado.';
     switch (snapshot.state) {
       case firebase.storage.TaskState.PAUSED: // or 'paused'
         console.log('Upload is paused');

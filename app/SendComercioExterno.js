@@ -2,6 +2,10 @@ window.onload = initialize;
 
 //formulario
 var formRegister_comercio_externo;
+//progress-bar (in modal window)
+var progress_bar;
+var progress_bar_text_below;
+
 //variable de urbanizacion
 var refUrbanizacion;
 //variable de negocios internos en refUrbanizacion
@@ -15,6 +19,9 @@ var refUrbanizacion_comercio_externo;
 
 
 function initialize(){
+progress_bar = document.getElementById('progress-bar');
+progress_bar_text_below = document.getElementById('progress-bar-txt');
+
 formRegister_comercio_externo = document.getElementById('form_comercio_externo');
 formRegister_comercio_externo.addEventListener("submit",send_comercio_externo_toFirebase, false);
 
@@ -36,6 +43,8 @@ function send_comercio_externo_toFirebase(event){
     // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
     var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
     console.log('Upload is ' + progress + '% done');
+    progress_bar.style.width = progress + '%';
+    progress_bar_text_below.textContent = progress.toFixed() + '% completado.';
     switch (snapshot.state) {
       case firebase.storage.TaskState.PAUSED: // or 'paused'
         console.log('Upload is paused');

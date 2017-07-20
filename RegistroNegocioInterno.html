@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MonkeyEvents</title>
+    <title>Convivamos/Registro</title>
     <link rel="stylesheet" href="app/formulario.css"/>
     <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.css"/>
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
@@ -13,7 +13,6 @@
     <img  class="img-rounded" src="assets/Convivamos1.png" alt="" >
   </div>
 
-<div>
 
 <form id="form_negocio_interno">
   <div class="form-group">
@@ -45,11 +44,40 @@
     <label><input type="checkbox"> Autorizo a ........ a utilizar mi informacion con el fin de ...</label>
   </div>
 
-  <button type="submit" class="btn btn-primary btn-lg">Registrarme!</button>
+  <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalSaveChanges">Registrarme!</button>
 
  </form>
 
-</div>
+
+ <!-- Modal -->
+ <div id="modalSaveChanges" class="modal fade" role="dialog">
+   <div class="modal-dialog">
+
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title">Registrando nuevo negocio...</h4>
+       </div>
+       <div class="modal-body">
+         <!-- progress bar-->
+         <div class="progress">
+           <div id="progress-bar" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+           aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+           </div>
+         </div>
+         <!-- END progress bar-->
+       </div>
+       <div class="modal-footer">
+         <h1 id="progress-bar-txt">0% completado.</h1>
+         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+       </div>
+     </div>
+     <!-- END Modal content-->
+   </div>
+ </div>
+ <!-- END Modal -->
+
 
 
 
