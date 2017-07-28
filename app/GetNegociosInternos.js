@@ -19,10 +19,11 @@ get_negocios_internos_fromFirebase();
 function get_negocios_internos_fromFirebase(){
   refUrbanizacion_negocio_interno.on("value", function(snap){
     var datos = snap.val();
+    console.log(datos);
     for(var key in datos){
       var card = document.createElement('div');
       card.className = 'col-md-4';
-      card.innerHTML = '<div class="card_negocio_interno invisible">\
+      card.innerHTML = '<div class="card_negocio_interno">\
                               <div class=""><!--adverso de la carta-->\
                                 <img src="'+datos[key].img+'" alt="" class="img_card">\
                                 <div class="info-card">\
