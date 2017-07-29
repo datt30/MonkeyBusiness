@@ -26,6 +26,13 @@ $(document).ready(function() {
 
 });
 
+function animationflip(element){
+  var card = $(element).parent().parent(); //toma el padre del padre del contenido obteniendo la carta en si
+  animation(card, 'flipInY');
+
+  card.children().eq(0).addClass('disappear'); //le agregamos disappear al adverso de la carta
+  card.children().eq(1).removeClass('disappear'); //le quitamos disappear al reverso de la carta
+}
 
 //realiza todos los cambios y animaciones para voltear la tarjeta
 function animationflip(element,location){

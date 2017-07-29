@@ -13,26 +13,21 @@
     <img  class="img-rounded" src="assets/Convivamos1.png" alt="" >
   </div>
 
-  <h2>PROXIMAMENTE...</h2>
-  <h4>Podrás proporcionar información en esta sección para que te contacten personalmente</h4>
-  <h4>Esperamos contar contigo!</h4>
 
   <form id="form_contactos">
     <div class="form-group">
       <input type="text" class="form-control default-value" value="Nombre" id="nombre">
     </div>
     <div class="form-group">
-      <input type="text" class="form-control default-value" value="Celular"id="celular">
-    </div>
-    <div class="form-group">
       <input type="text" class="form-control default-value" value="Correo Electronico" id="correo">
-    </div>
-    <div class="form-group">
-      <input type="text" class="form-control default-value" value="Dirección" id="direccion">
     </div>
     <div class="form-group">
       <textarea name="textarea" class="form-control default-value descripcion" value="Agregue una descripcion..." id="descripcion">Agregue una descripción...</textarea>
     </div>
+
+    <h4>Imagen Relacionada:</h4>
+    <input type="file" class="filestyle" data-buttonName="btn btn-primary btn-choose" id="img">
+
     <div class="checkbox">
       <label><input type="checkbox"> Autorizo a ........ a utilizar mi informacion con el fin de ...</label>
     </div>
@@ -49,7 +44,7 @@
        <div class="modal-content">
          <div class="modal-header">
            <button type="button" class="close" data-dismiss="modal">&times;</button>
-           <h4 class="modal-title">Registrando nuevo negocio...</h4>
+           <h4 class="modal-title">Registrando nuevo contacto...</h4>
          </div>
          <div class="modal-body">
            <!-- progress bar-->
@@ -81,6 +76,7 @@
 <script src="app/DBconfi.js"></script>
 <script src="app/SendContacto.js"></script>
 <script language="javascript" src="app/formquery.js"></script>
+<script src="dependencies/bootstrap-filestyle/src/bootstrap-filestyle.min.js"> </script>
 
 </body>
 </html>

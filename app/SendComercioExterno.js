@@ -8,7 +8,7 @@ var progress_bar_text_below;
 
 //variable de urbanizacion
 var refUrbanizacion;
-//variable de negocios internos en refUrbanizacion
+//variable de comercios externos en refUrbanizacion
 var refUrbanizacion_comercio_externo;
 
 //variables para guardar img
@@ -26,7 +26,7 @@ formRegister_comercio_externo = document.getElementById('form_comercio_externo')
 formRegister_comercio_externo.addEventListener("submit",send_comercio_externo_toFirebase, false);
 
 refUrbanizacion = firebase.database().ref().child("unidad x");
-refUrbanizacion_negocio_interno= refUrbanizacion.child("comercio_externo");
+refUrbanizacion_comercio_externo= refUrbanizacion.child("comercio_externo");
 }
 
 function send_comercio_externo_toFirebase(event){
@@ -75,5 +75,4 @@ function send_comercio_externo_toFirebase(event){
      });
     formRegister_comercio_externo.reset();
   });
-
 }
