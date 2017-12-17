@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MonkeyEvents</title>
+    <link rel="stylesheet" href="app/formulario.css"/>
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container_img_urb">
+    <img  class="img-rounded" src="assets/Convivamos.png" alt="" >
+  </div>
+
+
+  <form id="form_contactos">
+    <div class="form-group">
+      <input type="text" class="form-control default-value" value="Usuario" id="usuario">
+    </div>
+
+    <div id="1" class="form-group">
+      <input type="text" class="form-control default-value" value="Contraseña"  onfocus="changeBox()" onBlur="restoreBox()" id="contraseña">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg">Ingreso</button>
+
+   </form>
+
+   <!--Script password-->
+   <script language="javascript">
+ function changeBox()
+ {
+    document.getElementById('contraseña').type="password";
+ }
+ function restoreBox()
+ {
+    if(document.getElementById('contraseña').value=='')
+    {
+      document.getElementById('contraseña').type="text";
+    }
+ }
+</script>
+
+
+<!--dependencies-->
+<script src="dependencies/jquery/dist/jquery.min.js"></script>
+<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
+<!--Aplication-->
+<script src="app/DBconfi.js"></script>
+<script src="app/SendContacto.js"></script>
+<script language="javascript" src="app/formquery.js"></script>
+<script src="dependencies/bootstrap-filestyle/src/bootstrap-filestyle.min.js"> </script>
+
+</body>
+</html>
