@@ -1,7 +1,11 @@
 
 body {
-  background-image: url("../assets/fondo2.png");
-  background-size: 100%;
+  background-image: url("../assets/fondo.jpeg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -12,7 +16,7 @@ body {
  height: 200px;
  position: absolute;
  left: 7%;
- top: 0;
+ top: 12%;
 }
 
 .button_register:hover {
@@ -22,13 +26,13 @@ body {
  height: 200px;
  position: absolute;
  left: 7%;
- top: 0;
+ top: 12%;
 }
 
 #container_img_urb{
   width: 100%;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 #container_img_urb img{
@@ -54,7 +58,7 @@ body {
   background-color: white;
   border-radius: 10px;
   border-style: solid;
-  border-color: #337ab7;
+  border-color: #0277BD;
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -66,7 +70,7 @@ body {
   background-color: white;
   border-radius: 10px;
   border-style: solid;
-  border-color: #5cb85c;
+  border-color: #558B2F;
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -78,7 +82,7 @@ body {
   background-color: white;
   border-radius: 10px;
   border-style: solid;
-  border-color: #f0ad4e;
+  border-color: #F9A825;
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -116,13 +120,13 @@ body {
 }
 
 #container_cards .color-blue{
- background-color: #337ab7;
+ background-color: #0277BD;
 }
 #container_cards .color-green{
- background-color: #5cb85c;
+ background-color: #558B2F;
 }
 #container_cards .color-orange{
- background-color: #f0ad4e;
+ background-color: #F9A825;
 }
 
 #container_cards .info-card{
