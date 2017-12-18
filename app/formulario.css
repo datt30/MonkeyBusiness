@@ -42,21 +42,23 @@ body {
  padding-bottom: 20px
 }
 
-
-/*#form_contactos button{
-  width: 100%;
+/*estilo correspondiente al formulario de login*/
+#form_login {
+  width: 15% ;
+  height: auto;
   text-align: center;
-}
-#form_contactos .descripcion{
-  overflow-y: scroll;
-  height: 100px;
-  text-align: left;
-  resize: none;
+  margin: 0 auto;
 }
 
-#form_contactos label{
+#form_login h4{
  color: white;
-}*/
+ text-align: center;
+ font-size: 23px;
+ font-family: 'Abel', sans-serif;
+ margin: 0 auto;
+ padding-bottom: 20px
+}
+
 
 /*estilo correspondiente al formulario de comercios externos*/
 #form_comercio_externo {
@@ -128,4 +130,11 @@ body {
   margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 10px;
+}
+
+
+.disappear{
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }

@@ -8,15 +8,19 @@ body {
   background-size: cover;
 }
 
+#encabezado{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  padding-bottom: 20%;
+}
 
 .button_register {
  background-image: url("../assets/registrate.png");
  background-repeat: no-repeat;
  width: 200px;
  height: 200px;
- position: absolute;
- left: 7%;
- top: 12%;
 }
 
 .button_register:hover {
@@ -24,18 +28,14 @@ body {
  background-repeat: no-repeat;
  width: 200px;
  height: 200px;
- position: absolute;
- left: 7%;
- top: 12%;
 }
 
-#container_img_urb{
+.container_center{
   width: 100%;
   text-align: center;
-  margin-top: 8%;
 }
 
-#container_img_urb img{
+#logo_convivamos{
   width: 300px;
   height: 200px;
 }
@@ -165,7 +165,7 @@ body {
   margin-top: 20px;
 }
 
-.table-news .button-content{
+.button-content{
   text-align: center;
 }
 
@@ -173,4 +173,15 @@ body {
 .img-news{
   width: 50px;
   height: 40px;
+}
+
+#container_news_btn{
+  text-align: right;
+  width: 100%;
+}
+
+#container_news_btn .btn-news-agregar{
+  background-color: #455A64;
+  color: white;
+  margin-right: 20px;
 }

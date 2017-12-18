@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Convivamos</title>
     <link rel="stylesheet" href="app/menu.css"/>
+    <link rel="stylesheet" href="app/newsList.css"/>
     <link rel="stylesheet" href="app/principal.css"/>
     <link rel="stylesheet" href="app/animate.css"/>
     <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.css"/>
@@ -15,16 +16,35 @@
       <li><a href="#">Contactos Cercanos</a></li>
       <li><a href="#">Negocios Internos</a></li>
       <li><a href="#">Comercios Aledaños</a></li>
-      <li><a href="#">Administradores</a></li>
+      <li><a href="logadmin.html">Administradores</a></li>
       <li class="slider"></li>
   </ul>
 
+  <div id="encabezado">
 
-    <a href="SeleccionRegistro.html"><div type="button" class="button_register"></div></a>
+        <div class="col-md-4">
+          <div class="container_center">
+            <div type="button" class="button_register" onclick="location.href='SeleccionRegistro.html';"></div>
+          </div>
+        </div>
 
-    <div id="container_img_urb">
-      <img class="img-rounded" src="assets/Convivamos.png" alt="" >
-    </div>
+        <div class="col-md-4">
+          <div class="container_center">
+            <img id="logo_convivamos" src="assets/Convivamos.png" alt="" >
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div id=news-list-content>
+                <ul id="news-list"></ul>
+            </div>
+        </div>
+
+  </div>
+
+
+
+
 
   <!--
   <div id="container_buttons">

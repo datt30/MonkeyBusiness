@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Convivamos</title>
     <link rel="stylesheet" href="app/principal.css"/>
+    <link rel="stylesheet" href="app/formulario.css"/>
     <link rel="stylesheet" href="app/animate.css"/>
     <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.css"/>
 </head>
@@ -12,6 +13,10 @@
 
     <div id="container_img_urb">
       <img class="img-rounded" src="assets/Convivamos.png" alt="" >
+    </div>
+
+    <div id="container_news_btn">
+      <button type="submit" class="btn btn-lg btn-news-agregar" onclick="location.href='RegistroNoticia.html';">Agregar Nueva</button>
     </div>
 
     <div class="table-news table-responsive">
@@ -26,58 +31,7 @@
               <th>Eliminar</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td><img class="img-news" src="assets/club-aviva.jpg"></td>
-              <td>Asamblea</td>
-              <td>invitamos a todos los copropietarios a participar de nuestra tercera gran asamblea anual, la cual se llevabara a cabo los dias miercoles y jueves de este mes.</td>
-              <td class="button-content">
-                  <button type="button" class="btn btn-default btn-sm">
-                      <span class="glyphicon glyphicon-pencil"></span>
-                  </button>
-              </td>
-              <td class="button-content">
-                  <button type="button" class="btn btn-default btn-sm">
-                      <span class="glyphicon glyphicon-trash"></span>
-                  </button>
-              </td>
-            </tr>
-
-            <tr>
-              <td>1</td>
-              <td><img class="img-news" src="assets/club-aviva.jpg"></td>
-              <td>Asamblea</td>
-              <td>invitamos a todos los copropietarios a participar de nuestra tercera gran asamblea anual, la cual se llevabara a cabo los dias miercoles y jueves de este mes.</td>
-              <td class="button-content">
-                  <button type="button" class="btn btn-default btn-sm">
-                      <span class="glyphicon glyphicon-pencil"></span>
-                  </button>
-              </td>
-              <td class="button-content">
-                  <button type="button" class="btn btn-default btn-sm">
-                      <span class="glyphicon glyphicon-trash"></span>
-                  </button>
-              </td>
-            </tr>
-
-            <tr>
-              <td>1</td>
-              <td><img class="img-news" src="assets/club-aviva.jpg"></td>
-              <td>Asamblea</td>
-              <td>invitamos a todos los copropietarios a participar de nuestra tercera gran asamblea anual, la cual se llevabara a cabo los dias miercoles y jueves de este mes.</td>
-              <td class="button-content">
-                  <button type="button" class="btn btn-default btn-sm">
-                      <span class="glyphicon glyphicon-pencil"></span>
-                  </button>
-              </td>
-              <td class="button-content">
-                  <button type="button" class="btn btn-default btn-sm">
-                      <span class="glyphicon glyphicon-trash"></span>
-                  </button>
-              </td>
-            </tr>
-
+          <tbody id="news-lines">
 
           </tbody>
         </table>

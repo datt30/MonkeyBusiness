@@ -19,30 +19,27 @@ get_news_fromFirebase();
 
 function get_news_fromFirebase(){
   refUrbanizacion_noticias.on("value", function(snap){
-    var datos = snap.val();
+    datos = snap.val();
+    var index=0;
     for(var key in datos){
-      var card = document.createElement('div');
-      card.className = 'col-md-4';
-      card.innerHTML = '<div class="card_negocio_interno">\
-                              <div class=""><!--adverso de la carta-->\
-                                <img src="'+datos[key].img+'" alt="" class="img_card">\
-                                <div class="info-card">\
-                                  <h3>'+datos[key].nombre+'</h3>\
-                                  <h4>'+datos[key].telefono+'</h4>\
-                                </div>\
-                                <button class="btn-show glyphicon glyphicon-plus color-orange" onclick="animationflip(this,'+datos[key].latlon+')"></button>\
-                              </div>\
-                              <div class="disappear"><!--reverso de la carta por defecto invisible-->\
-                                <div class="map-card"></div>\
-                                <div class="info-card">\
-                                  <h4>'+datos[key].pagina+'</h4>\
-                                  <h4>'+datos[key].descripcion+'</h4>\
-                                </div>\
-                                <button class="btn-show glyphicon glyphicon-minus color-orange" onclick="animationflipOut(this)"></button>\
-                              </div>\
-                        </div>';
+      index++;
+      var linesContent = document.createElement('tr');
+      linesContent.innerHTML = '<td>'+index+'</td>\
+                                <td><img class="img-news" src="'+datos[key].img+'"></td>\
+                                <td>'+datos[key].titulo+'</td>\
+                                <td>'+datos[key].texto+'</td>\
+                                <td class="button-content">\
+                                  <button type="button" class="btn btn-default btn-sm" data-convalidation="'+key+'" onclick="edit_patrocinador(this)">\
+                                    <span class="glyphicon glyphicon-pencil"></span>\
+                                  </button>\
+                                </td>\
+                                <td class="button-content">\
+                                  <button type="button" class="btn btn-default btn-sm" data-convalidation="'+key+'" onclick="remove_patrocinador(this)">\
+                                    <span class="glyphicon glyphicon-trash"></span>\
+                                  </button>\
+                                </td>';
 
-      document.getElementById('container_cards').appendChild(card);
+      document.getElementById('news-lines').appendChild(linesContent);
     }
 
   });

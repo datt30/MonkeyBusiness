@@ -14,7 +14,7 @@
   </div>
 
 
-  <form id="form_contactos">
+  <form id="form_login">
     <div class="form-group">
       <input type="text" class="form-control default-value" value="Usuario" id="usuario">
     </div>
@@ -23,24 +23,11 @@
       <input type="text" class="form-control default-value" value="Contraseña"  onfocus="changeBox()" onBlur="restoreBox()" id="contraseña">
     </div>
 
-    <button type="submit" class="btn btn-primary btn-lg">Ingreso</button>
+    <h4 id="messaje_error" class="disappear">Verifica tu ID o Contraseña.</h4>
+    <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
 
    </form>
 
-   <!--Script password-->
-   <script language="javascript">
- function changeBox()
- {
-    document.getElementById('contraseña').type="password";
- }
- function restoreBox()
- {
-    if(document.getElementById('contraseña').value=='')
-    {
-      document.getElementById('contraseña').type="text";
-    }
- }
-</script>
 
 
 <!--dependencies-->
@@ -50,7 +37,8 @@
 
 <!--Aplication-->
 <script src="app/DBconfi.js"></script>
-<script src="app/SendContacto.js"></script>
+<script src="app/efect_password.js"></script>
+<script src="app/login.js"></script>
 <script language="javascript" src="app/formquery.js"></script>
 <script src="dependencies/bootstrap-filestyle/src/bootstrap-filestyle.min.js"> </script>
 

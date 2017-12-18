@@ -6,6 +6,7 @@ var refUrbanizacion;
 var refUrbanizacion_negocio_interno;
 var refUrbanizacion_comercio_externo;
 var refUrbanizacion_contactos;
+var refUrbanizacion_noticias;
 
 
 function initialize(){
@@ -14,7 +15,9 @@ refUrbanizacion = firebase.database().ref().child("unidad x");
 refUrbanizacion_negocio_interno= refUrbanizacion.child("negocio_interno");
 refUrbanizacion_comercio_externo= refUrbanizacion.child("comercio_externo");
 refUrbanizacion_contactos= refUrbanizacion.child("contactos");
+refUrbanizacion_noticias= refUrbanizacion.child("noticias");
 
+get_news_fromFirebase();
 get_negocios_internos_fromFirebase();
 get_comercios_externos_fromFirebase();
 get_contactos_fromFirebase();
@@ -115,3 +118,23 @@ function get_negocios_internos_fromFirebase(){
 
      });
     }
+
+
+    function get_news_fromFirebase(){
+      refUrbanizacion_noticias.on("value", function(snap){
+        datos = snap.val();
+        var index=0;
+        for(var key in datos){
+          index++;
+          var linesContent = document.createElement('tr');
+          linesContent.innerHTML =  '<li>\
+                                      <img src="'+datos[key].img+'">\
+                                      <h3>'+datos[key].titulo+'</h3>\
+                                      <p>'+datos[key].texto+'</p>\
+                                    </li>';
+
+          document.getElementById('news-list').appendChild(linesContent);
+        }
+
+      });
+     }
